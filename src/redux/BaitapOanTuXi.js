@@ -43,7 +43,7 @@ const OanTuXiReducer = (state = stateDefault, action) => {
                     if (computer.id === 'keo') {
                         state.result = 'DRAW !!';
                     } else if (computer.id === 'bua') {
-                        state.result = 'Looser !!';
+                        state.result = 'Loser !!';
                     } else {
                         state.result = 'Winner !!';
                         state.win +=1;
@@ -56,7 +56,7 @@ const OanTuXiReducer = (state = stateDefault, action) => {
                     if (computer.id === 'bua') {
                         state.result = 'DRAW !!';
                     } else if (computer.id === 'bao') {
-                        state.result = 'Looser !!';
+                        state.result = 'Loser !!';
                     } else {
                         state.result = 'Winner !!';
                         state.win +=1;
@@ -68,14 +68,14 @@ const OanTuXiReducer = (state = stateDefault, action) => {
                     if (computer.id === 'bao') {
                         state.result = 'DRAW !!';
                     } else if (computer.id === 'keo') {
-                        state.result = 'Looser !!';
+                        state.result = 'Loser !!';
                     } else {
                         state.result = 'Winner !!';
                         state.win +=1;
 
                     };break;
                     
-                    default:  state.result = 'Looser !!';
+                    default:  state.result = 'Loser !!';
                   
             }
             state.totalPlay+=1;
